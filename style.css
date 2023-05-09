@@ -2,27 +2,32 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 
-    line-height: 150%;
+
 }
 body{
-    background: radial-gradient(rgb(67, 76, 234), rgba(23, 33, 34, 0.538))
+    background: url(https://www.alura.com.br/artigos/assets/sistema-codigo-binario/sistema-codigo-binario.png)
     
+}
+.logoAlura{
+    display: inline;
+   /* position: absolute;*/
+    left: 10%;
+    top: 5%;
 }
 .cabecalho{
     text-align: center;
-    margin:  0 30px;
     font-size: 30px;
     font-weight: bold;
     color: white;
-    padding: 30px;
+    padding: 30px 0 ;
 
     
 }
 .cabecalhoFundo{
    
-    width: 97%;
-    padding: 0 30px;
-    background:linear-gradient(rgb(67, 76, 234), rgba(23, 33, 34, 0.538));
+    width: 95%;
+    padding:  10px 30px;
+    background:linear-gradient(rgb(248, 248, 248), rgba(23, 33, 34, 0.538));
 }
 
 .linkedin,.github{
@@ -31,8 +36,8 @@ body{
     margin: 3px;  
 	width: 49.5%;
 	padding: 10px 20px;
-	background: rgb(185, 216, 8);
-	color: white;
+	background: rgba(255, 255, 255, 0.842);
+	color: black;
 	border: none;
 	border-radius: 5px;
 	
@@ -47,7 +52,7 @@ div a{
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: black;
     
 }
 .titulo-cod{
@@ -59,18 +64,21 @@ div a{
     margin: 3px;  
 	width: 100%;
 	padding: 10px;
-	background: rgb(185, 216, 8);
-	color: white;
+	background:rgba(255, 255, 255, 0.836);
+	color: black;
 	border: none;
 	border-radius: 5px;
 }
 
 #textodecod{
+    background-color:rgba(8, 168, 88, 0.644);;
     
     width: 80%;
     height: 250px;
     margin: 10px 10%;
     padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
 
 }
 
@@ -78,7 +86,7 @@ div a{
 	width: 39%;
     margin:  0 5px ;
 	padding: 15px 0;
-	background: orange;
+	background:rgba(8, 168, 88, 0.774);
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -86,6 +94,13 @@ div a{
 	border-radius: 10px;
 	transition: 0.3s all;
 
+}
+::placeholder{
+    color: black;
+    padding-top: 10%;
+    font-size: 24px;
+    text-align: center;
+    
 }
 
 .enviar:hover{
@@ -100,7 +115,7 @@ div a{
     width: 20%;
     margin: 3px;
 	padding: 15px 0;
-	background: orange;
+	background: rgba(40, 243, 158, 0.74);
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
@@ -153,12 +168,15 @@ div a{
 
 @media screen and (min-width : 1000px) {
     .titulo-cod{
-        width: 100%;
+        margin: 0 2%;
+        width: 94%;
     }
     .github,.linkedin{
-        width: 47%;
+        margin-left: 2%;
+        width: 46.5%;
     }
     .enviar{
-        width: 34%;       
+        margin: 0 3%;
+        width: 31%;       
     }
 }
